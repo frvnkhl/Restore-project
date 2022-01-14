@@ -22,8 +22,8 @@ namespace API.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("BuyerId")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("BuyerId")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 

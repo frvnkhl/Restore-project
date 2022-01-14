@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20220110144031_BasketEntityAdded")]
+    [Migration("20220111151703_BasketEntityAdded")]
     partial class BasketEntityAdded
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,8 +24,8 @@ namespace API.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("BuyerId")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("BuyerId")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
